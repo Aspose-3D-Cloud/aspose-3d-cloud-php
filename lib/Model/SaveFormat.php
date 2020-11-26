@@ -75,7 +75,7 @@ class SaveFormat
             self::AMF,
             self::ASE,
             self::Aspose3DWeb,
-            self::Collada
+            self::Collada,
             self::Discreet3DS,
             self::Draco,
             self::DXF,
