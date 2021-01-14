@@ -18,11 +18,10 @@
 - Supports working with triangulate meshes, triangulate whole or part of the 3D scene.
 - [Remove 3D objects from a scene](https://docs.aspose.cloud/3d/delete-nodes-from-a-scene/).
 
-
-## New Features in Version 20.5
-
-- Support convert more file formats(HTML/VRML).
-- Triangulate part of the scene(Specified by OAP) and save the scene to different file 
+## Enhancements Version 20.5
+- Added support to read/write more file formats.
+- Added support for HTML file format conversion.
+- New feature added to Triangulate part of the scene (Specified by OAP) and save the scene to a different file.
 
 Please visit [Aspose.3D Cloud 20.5 Release Notes](https://docs.aspose.cloud/3d/aspose-3d-cloud-release-notes-20-5/).
 
