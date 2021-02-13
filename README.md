@@ -55,22 +55,29 @@ Use Composer's [autoload](https://getcomposer.org/doc/00-intro.md#autoloading) t
 require_once('vendor/autoload.php');
 ```
 
-## Convert PDF to PLY in the Cloud
+## PDF to PLY in PHP
 
 ```php
-$threedApi = TestBase::getThreeDApi();
-$name = "template3d.pdf";
-$saveOpt = new PlySaveOption();
-$saveOpt->setSaveFormat(SaveFormat::PLY);
-$saveOpt->setFileSystem(new FileSystem());
-$saveOpt->getFileSystem()->setFileSystemType(FileSystemType::MemoryFileSystem);
-$positionComponents = array("x", "y", "z");
-$saveOpt->setPositionComponents($positionComponents);
-$newfilename = "output.ply";;
-$folder = "3DTest";
-$isOverwrite = "true";
-$storage = "First Storage";
-$result = $threedApi->postConvertByOpt($name, $saveOpt, $newfilename, $folder, $isOverwrite, $storage);
+	// Get your ClientId and ClientSecret from https://dashboard.aspose.cloud (free registration required).
+
+	$threeDApi = new ThreeDCloudApi('client_credentials', 'MY_CLIENT_ID', 'MY_CLIENT_SECRET');
+
+	$name = "template3d.pdf";
+	
+	$saveOpt = new PlySaveOption();
+	$saveOpt->setSaveFormat(SaveFormat::PLY);
+	$saveOpt->setFileSystem(new FileSystem());
+	$saveOpt->getFileSystem()->setFileSystemType(FileSystemType::MemoryFileSystem);
+	
+	$positionComponents = array("x", "y", "z");
+	$saveOpt->setPositionComponents($positionComponents);
+	
+	$newfilename = "output.ply";;
+	$folder = "3DTest";
+	$isOverwrite = "true";
+	$storage = "My_Storage_Name";
+	
+	$result = $threedApi->postConvertByOpt($name, $saveOpt, $newfilename, $folder, $isOverwrite, $storage);
 ```
 
 ## Aspose.3D Cloud SDKs in Popular Languages
